@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		792DCB76273ACAE900B57961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DCB75273ACAE900B57961 /* AppDelegate.swift */; };
 		792DCB78273ACAE900B57961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DCB77273ACAE900B57961 /* SceneDelegate.swift */; };
-		792DCB7A273ACAE900B57961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DCB79273ACAE900B57961 /* ViewController.swift */; };
 		792DCB7D273ACAE900B57961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792DCB7B273ACAE900B57961 /* Main.storyboard */; };
 		792DCB7F273ACAEB00B57961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792DCB7E273ACAEB00B57961 /* Assets.xcassets */; };
 		792DCB82273ACAEB00B57961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792DCB80273ACAEB00B57961 /* LaunchScreen.storyboard */; };
+		792DCB8A273AD3A700B57961 /* StocksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DCB89273AD3A700B57961 /* StocksTableViewController.swift */; };
+		792DCB8C2741957F00B57961 /* CompanyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DCB8B2741957F00B57961 /* CompanyInfo.swift */; };
+		ECB79789872367CA93734B95 /* Pods_NYSEStocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB905BA3B75D938C9A07DA44 /* Pods_NYSEStocks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49988146F0E7E392038B42A4 /* Pods-NYSEStocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYSEStocks.release.xcconfig"; path = "Target Support Files/Pods-NYSEStocks/Pods-NYSEStocks.release.xcconfig"; sourceTree = "<group>"; };
 		792DCB72273ACAE900B57961 /* NYSEStocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYSEStocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		792DCB75273ACAE900B57961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		792DCB77273ACAE900B57961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		792DCB79273ACAE900B57961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		792DCB7C273ACAE900B57961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		792DCB7E273ACAEB00B57961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		792DCB81273ACAEB00B57961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		792DCB83273ACAEB00B57961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		792DCB89273AD3A700B57961 /* StocksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTableViewController.swift; sourceTree = "<group>"; };
+		792DCB8B2741957F00B57961 /* CompanyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfo.swift; sourceTree = "<group>"; };
+		DB905BA3B75D938C9A07DA44 /* Pods_NYSEStocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYSEStocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1844CE1E903E47939E595B /* Pods-NYSEStocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYSEStocks.debug.xcconfig"; path = "Target Support Files/Pods-NYSEStocks/Pods-NYSEStocks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB79789872367CA93734B95 /* Pods_NYSEStocks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012BE95FAFD45B3C7198AAD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE1844CE1E903E47939E595B /* Pods-NYSEStocks.debug.xcconfig */,
+				49988146F0E7E392038B42A4 /* Pods-NYSEStocks.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		792DCB69273ACAE900B57961 = {
 			isa = PBXGroup;
 			children = (
 				792DCB74273ACAE900B57961 /* NYSEStocks */,
 				792DCB73273ACAE900B57961 /* Products */,
+				012BE95FAFD45B3C7198AAD9 /* Pods */,
+				8273E6721967A2C41FC6D14A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +76,22 @@
 			children = (
 				792DCB75273ACAE900B57961 /* AppDelegate.swift */,
 				792DCB77273ACAE900B57961 /* SceneDelegate.swift */,
-				792DCB79273ACAE900B57961 /* ViewController.swift */,
 				792DCB7B273ACAE900B57961 /* Main.storyboard */,
 				792DCB7E273ACAEB00B57961 /* Assets.xcassets */,
 				792DCB80273ACAEB00B57961 /* LaunchScreen.storyboard */,
 				792DCB83273ACAEB00B57961 /* Info.plist */,
+				792DCB89273AD3A700B57961 /* StocksTableViewController.swift */,
+				792DCB8B2741957F00B57961 /* CompanyInfo.swift */,
 			);
 			path = NYSEStocks;
+			sourceTree = "<group>";
+		};
+		8273E6721967A2C41FC6D14A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB905BA3B75D938C9A07DA44 /* Pods_NYSEStocks.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 792DCB86273ACAEB00B57961 /* Build configuration list for PBXNativeTarget "NYSEStocks" */;
 			buildPhases = (
+				7D82C66A24E848FF855957EF /* [CP] Check Pods Manifest.lock */,
 				792DCB6E273ACAE900B57961 /* Sources */,
 				792DCB6F273ACAE900B57961 /* Frameworks */,
 				792DCB70273ACAE900B57961 /* Resources */,
+				23C72BEC7D83023DF8B7A277 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +162,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23C72BEC7D83023DF8B7A277 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYSEStocks/Pods-NYSEStocks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYSEStocks/Pods-NYSEStocks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NYSEStocks/Pods-NYSEStocks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D82C66A24E848FF855957EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYSEStocks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		792DCB6E273ACAE900B57961 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				792DCB7A273ACAE900B57961 /* ViewController.swift in Sources */,
 				792DCB76273ACAE900B57961 /* AppDelegate.swift in Sources */,
 				792DCB78273ACAE900B57961 /* SceneDelegate.swift in Sources */,
+				792DCB8C2741957F00B57961 /* CompanyInfo.swift in Sources */,
+				792DCB8A273AD3A700B57961 /* StocksTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +356,7 @@
 		};
 		792DCB87273ACAEB00B57961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE1844CE1E903E47939E595B /* Pods-NYSEStocks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +384,7 @@
 		};
 		792DCB88273ACAEB00B57961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49988146F0E7E392038B42A4 /* Pods-NYSEStocks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
